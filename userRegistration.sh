@@ -7,12 +7,22 @@ NamingPattern="^[A-Z][a-z]{3,20}$"
 #Variables declaration
 firstName=""
 
-#Taking name as input from user and validate it
-read -p "Enter first name : " firstName
+#Taking Fist name as input from user and validate it
+read -p "Enter First Name : " firstName
 
 if [[ $firstName =~ $NamingPattern ]]
 then
-	echo "Valid Name"
+	echo "Your First Name is Valid"
 else
-	echo "Invalid name!!! Please enter first letter in capital."
+	echo "Your First Name is Invalid!!! Please enter first letter in capital."
+fi
+
+#Last name validation
+read -p "Enter Last Name : " lastName
+
+if [[ $lastName =~ $NamingPattern ]]
+then
+	echo "Your Last Name is Valid "
+else
+	echo "Your Last Name is Invalid!!!"
 fi
