@@ -1,12 +1,11 @@
-#!/bin/bash
+#!/bin/bash -x
 echo "---Welcome To User Registration---"
 
 #Constants declaration
 NAMING_PATTERN="^[A-Z][a-z]{3,20}$"
 EMAIL_PATTERN="^[a-zA-Z0-9._a-zA-Z0-9]+@[a-zA-Z0-9.a-zA-Z0-9]+\.[A-Za-z]{2,4}$"
 MOBILE_PATTERN="^[0-9]{2} [6-9]{1}[0-9]{9}$"
-PASSWORD_PATTERN="^[A-Za-z0-9]{8,}$"
-
+PASSWORD_PATTERN="^[A-Za-z0-9]{7,}*(.*[A-Z].*{1}+)$"
 
 #Variables declaration
 firstName=""
