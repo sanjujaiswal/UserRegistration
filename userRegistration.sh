@@ -5,7 +5,7 @@ echo "---Welcome To User Registration---"
 NAMING_PATTERN="^[A-Z][a-z]{3,20}$"
 EMAIL_PATTERN="^[a-zA-Z0-9._a-zA-Z0-9]+@[a-zA-Z0-9.a-zA-Z0-9]+\.[A-Za-z]{2,4}$"
 MOBILE_PATTERN="^[0-9]{2} [6-9]{1}[0-9]{9}$"
-PASSWORD_PATTERN="^[a-zA-Z0-9]*(([0-9][A-Z]+[a-zA-Z0-9]){2}|([A-Z][0-9]+[a-zA-Z0-9]*){2})*[A-Za-z0-9]*{6,}$"
+PASSWORD_PATTERN="^[a-zA-Z0-9]*(.*[A-Z].*{1}+)*(.*[0-9].*{1}+)*(.*[!@#$%^&*=+].*{1}+)*[a-zA-Z0-9]{5,}$"
 
 #Variables declaration
 firstName=""
