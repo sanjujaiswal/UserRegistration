@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 echo "---Welcome To User Registration---"
 
 #Constants declaration
@@ -9,9 +9,9 @@ EMAIL_PATTERN2="^[a-zA-Z0-9]{1,}+@{1}[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$"
 EMAIL_PATTERN3="^[a-zA-Z0-9._a-zA-Z0-9]+@{1}[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$"
 EMAIL_PATTERN4="^[a-zA-Z0-9._a-zA-Z0-9]+@{1}[a-zA-Z0-9.a-zA-Z0-9]+\.[A-Za-z]{2,4}$"
 
-EMAIL_PATTERN="^[a-zA-Z0-9._a-zA-Z0-9]+@[a-zA-Z0-9.a-zA-Z0-9]+\.[A-Za-z]{2,4}$"
+EMAIL_PATTERN="^[a-z0-9._a-z0-9]+@[a-z0-9.a-z0-9]+\.[a-z]{2,4}$"
 MOBILE_PATTERN="^[0-9]{2} [6-9]{1}[0-9]{9}$"
-PASSWORD_PATTERN="^[a-zA-Z0-9]*(.*[A-Z].*{1}+)*(.*[0-9].*{1}+)*(.*[!@#$%^&*=+].*{1}+)*[a-zA-Z0-9]{5,}$"
+PASSWORD_PATTERN="^[a-zA-Z0-9]*(.*[A-Z].*{1}+)*(.*[0-9].*{1}+)*(.*[!@#$%^&*=+].*{1})*[a-zA-Z0-9]{5,}$"
 
 #Variables declaration
 firstName=""
